@@ -42,7 +42,6 @@ async function fetchDataFromAPI(apiUrl) {
         fs.writeFileSync('./r3.json', JSON.stringify(usersCustomData, null, 2));
         console.log('Data written to r3.json');
 
-
         //Requirement 4
 
         const usersWithMoreThan3Comments = usersCustomData.filter(user => user.comments.length > 3);
